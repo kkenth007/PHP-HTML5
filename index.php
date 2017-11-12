@@ -6,7 +6,7 @@
   </head>
   <body>
 
-    <form action="kenichi.php" method="post">
+    <form action="till.php" method="post">
     <table border="5">
       <tr>
       <td>Column:</td>
@@ -20,7 +20,7 @@
 
       <tr>
       <td>Color:</td>
-      <td><input type="color" name="fav"></td>
+      <td><input type="color" name="fon"></td>
       </tr>
 
       <tr>
