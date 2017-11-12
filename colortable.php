@@ -1,4 +1,4 @@
-<?php $color=$_POST['fav']; ?>
+<?php $color=$_POST['fon']; ?>
 <table border="10" bordercolor="<?php echo $color; ?>">
     <?php
         $col=$_POST['col'];
