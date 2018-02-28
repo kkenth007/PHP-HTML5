@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p{
+font-size:30px;
+}
+button{background-color: #008CBA;color:white;}
+</style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("p").hide();
+    $("#hide").click(function(){
+        $("p").hide(700);
+    });
+    $("#show").click(function(){
+    $("p").show(700);
+    });
+    
+    $("#show1").click(function(){
+    $("p").show(700);
+    $("#hide").hide();
+    $("#show").hide();
+    });
+    $("#hide1").click(function(){
+        $("p").hide(700);
+        $("#hide").hide();
+        $("#show").hide();
+    });
+    
+});
+</script>
+</head>
+<body bgcolor="green">
+<marquee><h1 class="text-primary">Hello Programmer 101</h1></marquee>
+<div align="center">
+<p class="text-primary">This is a paragraph with little content.<br><p><h3 id="123" align="center" class="text-primary">Bootstrap Buttons</h3></p></p>
+
+<p><img class="text-primary" src="https://ng-bootstrap.github.io/img/logo.svg" width="380px" hight="380px"></p>
+</div>
+<div align="center">
+<button id="show" class="text">Show</button>&nbsp;&nbsp;
+<button id="hide" class="text" >Hide</button>
+</div><br><!--<h3 align="center" class="text-primary">Bootstrap Buttons</h3>-->
+<div align="center">
+<button id="show1"type="button" class="btn btn-primary">Show</button>&nbsp;&nbsp;&nbsp;&nbsp;
+<button id="hide1"type="button" class="btn btn-primary">Hide</button>
+</div>
+</body>
+</html>
