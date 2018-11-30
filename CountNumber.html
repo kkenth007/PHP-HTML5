@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CountNumber</title>
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <style>
+        h1 {
+            font-family: 'Varela Round', sans-serif;
+            font-size: 15em;
+            text-align: center;
+            color: orangered;
+        }
+        body {
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="count"></h1>
+    <script>
+        var number = 30;
+        var countDown = setInterval(function () {
+            document.getElementById('count').innerHTML = number;
+            if (number > 0) {
+                --number; // Decrease one Second Every 1000 Millisecond  
+            } else {
+                clearInterval(countDown); // Stop CountDown Timer
+                document.getElementById('count').innerHTML = "หยุด";
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
